@@ -1,0 +1,14 @@
+
+#footer{
+    display: flex;
+    margin: 10%;
+    
+}
+
+#footer > div{
+    margin-right: 15%;
+}
+body{
+    background-color: aquamarine;
+    text-align: center;
+}

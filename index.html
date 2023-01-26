@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="search">
+        <input type="text"  id="inputS" placeholder="Enter your city name" >
+        <button id="myButton" onclick="getData()">Search</button>
+    </div>
+    <div id="footer">
+        <div id="detail">
+            <p id="dt_txt"></p>
+            <h1> <span id="name"></span><span id="country"></span></h1><br><br>
+            <img  id="icon"/><h1 id="temp"></h1>
+            <br><br>
+            <div><b>Feels like <span id="feels_like"></span><span id="description"></span></b></div><br><br><br>
+            <div >Min Temp : <span id="minTemp"></span>°C</div>
+            <div >Max Temp : <span id="maxTemp"></span>°C</div>
+            <div >SunRise : <span id="sunrice"></span></div>
+            <div >SunSet : <span id="sunset"></span></div>
+            <div>Speed : <span id="speed"> </span>WNW</div>
+            <div>Pressure : <span id="pressure"></span>hPa</div>
+        </div>
+        <div id="map">
+            <iframe  width="600" height="500" id="gmap_canvas" src="" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+    </div>
+</body>
+</html>
+<script src="index.js"></script>
